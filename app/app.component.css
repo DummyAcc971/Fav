@@ -1,0 +1,5 @@
+/* src/app/app.component.css */
+:host {
+    display: block;
+    height: 100%; /* Ensure the root component fills the body */
+  }

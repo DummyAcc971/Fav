@@ -1,0 +1,15 @@
+<aside class="sidebar-container">
+    <div class="logo-container">
+      <span class="logo-text">StoxFlick</span>
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><button type="button" (click)="setActive('dashboard')" [class.active]="activeItem === 'dashboard'"><span class="icon material-icons-outlined">dashboard</span>Dashboard</button></li>
+        <li><button type="button" (click)="setActive('favorites')" [class.active]="activeItem === 'favorites'"><span class="icon material-icons-outlined">favorite_border</span>Favorites</button></li>
+        <li><button type="button" (click)="setActive('about')" [class.active]="activeItem === 'about'"><span class="icon material-icons-outlined">info</span>About Us</button></li>
+      </ul>
+    </nav>
+    <div class="sign-out-container">
+      <button type="button" (click)="handleSignOut()"><span class="icon material-icons-outlined">logout</span>Sign out</button>
+    </div>
+  </aside>
